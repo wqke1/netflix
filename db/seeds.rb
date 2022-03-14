@@ -4,5 +4,6 @@
 # Examples:
 #
 puts "Attention ça va commencer"
-users = User.create([{ email: 'test@test' }, { password: "secret" }, { phone: "0620661124" }, { name: "wqkerino" }])
+user1 = User.create([{ email: 'test@test' }, { password: "secret" }, { phone: "0620661124" }, { name: "wqkerino" }])
+user2 = User.create([{ email: 'theo.faugere3@gmail.com' }, { password: "azerty" }, { phone: "0770110011" }, { name: "GreeZz" }])
 puts "gg mgl"
