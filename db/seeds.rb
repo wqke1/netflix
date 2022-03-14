@@ -3,5 +3,6 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+puts "Attention ça va commencer"
+users = User.create([{ email: 'test@test' }, { password: "secret" }, { phone: "0620661124" }, { name: "wqkerino" }])
+puts "gg mgl"
