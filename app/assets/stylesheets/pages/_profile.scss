@@ -1,0 +1,38 @@
+.div-container-profile {
+  margin: 10% auto;
+  width: 50%;
+  text-align: center;
+  background-color: #000000;
+  padding: 17px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 20px 10px #e50913;
+
+  h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 70px;
+  }
+
+  .div-infos {
+    text-align: justify;
+    margin-top: 5%;
+
+    h2 {
+      color: #9D9D9D;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 1px;
+      font-size: 20px;
+    }
+  }
+
+
+  .div-logout {
+    margin: 20px auto;
+
+    .btn-logout {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
