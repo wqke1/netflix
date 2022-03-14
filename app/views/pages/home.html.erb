@@ -5,6 +5,9 @@
     <%= link_to "movies", movies_index_path %>
   </div>
   <div class="div-account">
-    <%= link_to "Gérer le comptes", "#" %>
+  <% link_to movies_show_path do %>
+    <%= image_tag "head.png"%>
+  <% end %>
+    <%# <%= link_to "Gérer le comptes", "#" %>
   </div>
 </div>
