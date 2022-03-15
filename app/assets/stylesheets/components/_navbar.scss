@@ -2,11 +2,12 @@
   justify-content: space-between;
   background: black;
   height: 65px;
-  // C'est pour fixer la navbar mais ça décale le "Reprendre avec le profil de Thomas"
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // right: 0;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .navbar-lewagon .navbar-collapse {

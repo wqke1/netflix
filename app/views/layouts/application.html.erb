@@ -17,6 +17,8 @@
     <%= render 'shared/flashes' %>
 
     <%= yield %>
+    <% unless current_page?(home_users_path) %>
     <%= render 'shared/footer' %>
+    <% end %>
   </body>
 </html>

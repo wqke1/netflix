@@ -26,3 +26,18 @@ function activateSearch() {
   searchBox.classList.toggle("active");
 }
 ///////////////////////////////////////////////////////////////////////////
+//////////////////////////////navbar fixed a la zeub///////////////////////
+window.onscroll = function () { myFunction() };
+
+var navbar = document.getElementById("nav-lewagon");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+/////////////////////////////////////////////////////////////////////////
