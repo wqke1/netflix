@@ -2,6 +2,11 @@
   <h1>Profile</h1>
   <div class="div-infos">
     <h2>
+    <i class="fa-solid fa-user-tie"></i>
+    Name:
+    <%= current_user.name %>
+    </h2>
+    <h2>
     <i class="fa-solid fa-at"></i>
     Email:
     <%= current_user.email %>
@@ -13,6 +18,7 @@
     </h2>
   </div>
   <div class="div-logout">
-    <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn-logout" %>
+    <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "btn-logout" %> |
+    <%= link_to "Edit", edit_user_registration_path, class: "btn-logout" %>
   </div>
 </div>

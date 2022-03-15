@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to movies_index_path, class: "navbar-brand" do %>
       <%= image_tag "netflix-logo.jpeg" %>
     <% end %>
 
@@ -9,18 +9,41 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="ul-navbar">
+        <li>
+          <%= link_to "Accueil", "#", class: "lt-navbar" %>
+        </li>
+        <li>
+          <%= link_to "Séries", "#", class: "lt-navbar" %>
+        </li>
+        <li>
+          <%= link_to "Films", "#", class: "lt-navbar" %>
+        </li>
+        <li>
+          <%= link_to "Nouvautés", "#", class: "lt-navbar" %>
+        </li>
+        <li>
+          <%= link_to "Liste", "#", class: "lt-navbar" %>
+        </li>
+      </ul>
+
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
+            <div class="search-box"><i class="fa fa-search search-box__icon"></i>
+              <input class="search-box__input" placeholder="Titre, personnes, genre"/>
+            </div>
           </li>
           <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
+            <%= link_to "#", class: "nav-link text-navbar" do %>
+              <i class="fa-solid fa-bell" style="margin-right: 15px;"></i>
+            <% end %>
           </li>
           <li class="nav-item dropdown">
             <%= image_tag "poulet.jpeg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
+              <%= link_to "Profile", profile_users_path, class: "dropdown-item" %>
               <%= link_to "Another action", "#", class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
