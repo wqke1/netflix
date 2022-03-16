@@ -9,12 +9,20 @@ legend ~ div.form-check:first-of-type {
   clear: left;
 }
 
+.page-login {
+  background-image: url("https://www.logitheque.com/en/wp-content/uploads/sites/6/2019/07/netflix-image.jpg");
+  background-size: cover;
+  height: 110vh;
+  opacity: 0.9;
+}
 .login-container{
-  background-color: rgba(0, 0, 0, .3);
+  background-color: rgba(0, 0, 0, .8);
   width: 30%;
   margin: auto;
-  margin-top: 5%;
   height: 75vh;
+  border-radius: 7px;
+  position: relative;
+  top: 150px;
 
   h2 {
     font-size: 28px;
@@ -40,6 +48,7 @@ legend ~ div.form-check:first-of-type {
   color: white;
   border-radius: 7px;
   margin-top: 2%;
+  padding: 1%;
 }
 
 .form-control {
@@ -49,4 +58,24 @@ legend ~ div.form-check:first-of-type {
 
 .btn {
   color: white;
+}
+
+.blabla-login {
+  color: rgb(128,128,128);
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+
+  a {
+    color: rgb(128,128,128);
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    text-decoration: none;
+
+    &:hover {
+      color: red;
+    }
+  }
 }
