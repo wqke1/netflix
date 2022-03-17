@@ -108,7 +108,6 @@ h2 {
     margin-top: 1%;
     background-color: red;
     height: 125px;
-    background-image: url("https://www.tomsguide.fr/content/uploads/sites/2/2021/12/the-amazing-spider-man.jpg");
     background-size: cover;
     border-radius: 3px;
     transition: 1s;
@@ -143,6 +142,7 @@ h2 {
 /////////////////////////
 
 .categories-moviesindex {
+  overflow-x: overlay;
 
     h2 {
     margin-left: 5%;
