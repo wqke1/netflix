@@ -17,7 +17,6 @@
     </div>
   </div>
 </div>
-
 <div class="categories-moviesindex">
   <div class="reprendre-avec">
     <% @movies.each do |movie| %>
@@ -25,106 +24,74 @@
     <% end %>
   </div>
 </div>
-
-
-
-
 <div class="top10-france">
   <h2>Top 10 France aujourd'hui</h2>
   <div class="reprendre-avec">
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-  </div>
+    <% @movies_letop10.each do |movie| %>
+        <%= image_tag movie.image, class: "film" %>
+    <% end %>
 </div>
 <div class="categories-moviesindex">
   <h2>Tendances actuelles</h2>
   <div class="reprendre-avec">
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
+    <% @movies_tendances.each do |movie| %>
+        <%= image_tag movie.image, class: "film" %>
+    <% end %>
   </div>
 </div>
 <div class="categories-moviesindex">
   <h2>Nouveautés</h2>
   <div class="reprendre-avec">
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
+    <% @movies_new.each do |movie| %>
+        <%= image_tag movie.image, class: "film" %>
+    <% end %>
   </div>
 </div>
 <div class="categories-moviesindex">
   <h2>Moment de détente</h2>
   <div class="reprendre-avec">
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
+    <% @movies_chill.each do |movie| %>
+        <%= image_tag movie.image, class: "film" %>
+    <% end %>
   </div>
 </div>
 <div class="categories-moviesindex">
   <h2>Populaire sur Nutflix</h2>
   <div class="reprendre-avec">
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
+    <% @movies_populaire.each do |movie| %>
+        <%= image_tag movie.image, class: "film" %>
+    <% end %>
   </div>
 </div>
 <div class="categories-moviesindex">
   <h2>Films d'Hollywood</h2>
   <div class="reprendre-avec">
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
+    <% @movies_hollywood.each do |movie| %>
+        <%= image_tag movie.image, class: "film" %>
+    <% end %>
   </div>
 </div>
 <div class="categories-moviesindex">
   <h2>Comédies</h2>
   <div class="reprendre-avec">
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
+    <% @movies_comedies.each do |movie| %>
+        <%= image_tag movie.image, class: "film" %>
+    <% end %>
   </div>
 </div>
 <div class="categories-moviesindex">
   <h2>Animés</h2>
   <div class="reprendre-avec">
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
+    <% @movies_anime.each do |movie| %>
+        <%= image_tag movie.image, class: "film" %>
+    <% end %>
   </div>
 </div>
 <div class="categories-moviesindex">
   <h2>Sports</h2>
   <div class="reprendre-avec">
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
-    <div class="film"></div>
+    <% @movies_sports.each do |movie| %>
+        <%= image_tag movie.image, class: "film" %>
+    <% end %>
   </div>
 </div>
