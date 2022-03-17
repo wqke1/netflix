@@ -2,8 +2,7 @@ Rails.application.routes.draw do
 
   get 'categories/index'
   get 'categories/show'
-  get 'movies/index'
-  get 'movies/show'
+  resources :movies, only: [:index, :show]
 
 
   devise_for :users

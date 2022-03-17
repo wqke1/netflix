@@ -1,6 +1,7 @@
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.all.sample(6)
+    @movies = Movie.all
+    @movies_rpa = Movie.all.sample(6)
     @movies_letop10 = Movie.all.sample(6)
     @movies_tendances = Movie.all.sample(6)
     @movies_new = Movie.all.sample(6)
@@ -13,6 +14,6 @@ class MoviesController < ApplicationController
   end
 
   def show
-    @movies = Movie.find(params[:id])
+    @movie = Movie.find(params[:id])
   end
 end

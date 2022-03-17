@@ -1,0 +1,25 @@
+
+.tous-show {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-evenly;
+
+  .title-show {
+    color: white;
+
+    h1 {
+      text-align: center;
+      font-family: 'Noto Sans';
+    }
+
+    p {
+      margin-top: 5%;
+    }
+  }
+
+  .img-show {
+    width: 30%;
+    height: 40%;
+    border-radius: 5px;
+  }
+}
