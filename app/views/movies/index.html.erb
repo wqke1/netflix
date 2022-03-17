@@ -1,131 +1,130 @@
-<div class="container">
-  <div class="banner">
-    <div class="banner-placement">
-      <h1>The Amazing</h1>
-      <h1 id="spider">Spider-Man</h1>
-      <p>Peter Parker est un adolescent combattant le crime sous l'identité de Spider-Man après avoir été mordu par une araignée transgénique dans les laboratoires Oscorp. Chassé par les autorités sous les ordres du capitaine George Stacy, le père de sa petite amie Gwen, Peter tente de sauver New York du Docteur Connors, l'ex-associé de son père métamorphosé en créature reptilienne, le Lézard.</p>
-      <div class="dbtn-hpage">
-        <div class="lecture-btn">
-          <a href="#"><i class="fa-solid fa-play"></i>  Lecture</a>
-        </div>
-        <div class="infos-btn">
-          <a href="#"><i class="fa-solid fa-circle-exclamation"></i>  Plus d'infos</a>
-        </div>
+
+<div class="banner">
+  <div class="banner-placement">
+    <h1>The Amazing</h1>
+    <h1 id="spider">Spider-Man</h1>
+    <p>Peter Parker est un adolescent combattant le crime sous l'identité de Spider-Man après avoir été mordu par une araignée transgénique dans les laboratoires Oscorp. Chassé par les autorités sous les ordres du capitaine George Stacy, le père de sa petite amie Gwen, Peter tente de sauver New York du Docteur Connors, l'ex-associé de son père métamorphosé en créature reptilienne, le Lézard.</p>
+    <div class="dbtn-hpage">
+      <div class="lecture-btn">
+        <a href="#"><i class="fa-solid fa-play"></i>  Lecture</a>
       </div>
-      <div class="h2-reprendre">
-        <h2>Reprendre avec le profil de <%= current_user.name %></h2>
+      <div class="infos-btn">
+        <a href="#"><i class="fa-solid fa-circle-exclamation"></i>  Plus d'infos</a>
       </div>
     </div>
+    <div class="h2-reprendre">
+      <h2>Reprendre avec le profil de <%= current_user.name %></h2>
+    </div>
   </div>
+</div>
 
-  <div class="categories-moviesindex">
-    <div class="reprendre-avec">
-      <% @movies.each do |movie| %>
-          <%= image_tag movie.image, class: "film" %>
-      <% end %>
-    </div>
+<div class="categories-moviesindex">
+  <div class="reprendre-avec">
+    <% @movies.each do |movie| %>
+        <%= image_tag movie.image, class: "film" %>
+    <% end %>
   </div>
+</div>
 
 
 
 
-  <div class="top10-france">
-    <h2>Top 10 France aujourd'hui</h2>
-    <div class="reprendre-avec">
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-    </div>
+<div class="top10-france">
+  <h2>Top 10 France aujourd'hui</h2>
+  <div class="reprendre-avec">
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
   </div>
-  <div class="categories-moviesindex">
-    <h2>Tendances actuelles</h2>
-    <div class="reprendre-avec">
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-    </div>
+</div>
+<div class="categories-moviesindex">
+  <h2>Tendances actuelles</h2>
+  <div class="reprendre-avec">
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
   </div>
-  <div class="categories-moviesindex">
-    <h2>Nouveautés</h2>
-    <div class="reprendre-avec">
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-    </div>
+</div>
+<div class="categories-moviesindex">
+  <h2>Nouveautés</h2>
+  <div class="reprendre-avec">
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
   </div>
-  <div class="categories-moviesindex">
-    <h2>Moment de détente</h2>
-    <div class="reprendre-avec">
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-    </div>
+</div>
+<div class="categories-moviesindex">
+  <h2>Moment de détente</h2>
+  <div class="reprendre-avec">
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
   </div>
-  <div class="categories-moviesindex">
-    <h2>Populaire sur Nutflix</h2>
-    <div class="reprendre-avec">
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-    </div>
+</div>
+<div class="categories-moviesindex">
+  <h2>Populaire sur Nutflix</h2>
+  <div class="reprendre-avec">
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
   </div>
-  <div class="categories-moviesindex">
-    <h2>Films d'Hollywood</h2>
-    <div class="reprendre-avec">
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-    </div>
+</div>
+<div class="categories-moviesindex">
+  <h2>Films d'Hollywood</h2>
+  <div class="reprendre-avec">
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
   </div>
-  <div class="categories-moviesindex">
-    <h2>Comédies</h2>
-    <div class="reprendre-avec">
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-    </div>
+</div>
+<div class="categories-moviesindex">
+  <h2>Comédies</h2>
+  <div class="reprendre-avec">
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
   </div>
-  <div class="categories-moviesindex">
-    <h2>Animés</h2>
-    <div class="reprendre-avec">
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-    </div>
+</div>
+<div class="categories-moviesindex">
+  <h2>Animés</h2>
+  <div class="reprendre-avec">
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
   </div>
-  <div class="categories-moviesindex">
-    <h2>Sports</h2>
-    <div class="reprendre-avec">
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-      <div class="film"></div>
-    </div>
+</div>
+<div class="categories-moviesindex">
+  <h2>Sports</h2>
+  <div class="reprendre-avec">
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
+    <div class="film"></div>
   </div>
 </div>
