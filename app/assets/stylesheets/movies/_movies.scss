@@ -84,12 +84,13 @@ h2 {
     font-family: 'Noto Sans';
     font-weight: 700;
     margin-left: 5%;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 
 .h2-reprendre {
   position: relative;
-  top: 115px;
+  top: 150px;
+  left: -65px;
 }
 
 /////////////////////////
@@ -125,9 +126,10 @@ h2 {
 
   .film {
     width: 12%;
-    height: 180px;
+    height: 200px;
     margin-top: 1%;
     border-radius: 0px;
+    margin-bottom: 3%;
   }
 
   h2 {
