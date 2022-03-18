@@ -81,3 +81,50 @@ body {
   opacity: 1;
   width: 100%;
 }
+
+
+// DropDown Nutflix
+
+.theo-dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+
+  .hidden {
+    display: none;
+
+
+
+    li {
+      color: #fff;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+    }
+  }
+
+  &:hover .hidden {
+    width: 200px;
+    display: block;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    word-spacing: 7px;
+    list-style: none;
+  }
+
+  &:hover .rotate {
+    transform: rotate(180deg);
+    transition: 0.5s;
+  }
+
+  .rotate {
+    transition: 0.5s;
+  }
+
+}

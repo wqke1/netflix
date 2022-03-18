@@ -39,14 +39,31 @@
               <i class="fa-solid fa-bell" style="margin-right: 15px;"></i>
             <% end %>
           </li>
-          <li class="nav-item dropdown">
+
+
+          <div class="theo-dropdown">
             <%= image_tag "poulet.jpeg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Profile", profile_users_path, class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            <div class="rotate">
+              <i class="fa-solid fa-caret-down" style="color: white;"></i>
             </div>
-          </li>
+            <ul class="hidden">
+              <li>
+                <i class="fa-solid fa-pen"></i>
+                <%= link_to "Profile", profile_users_path%>
+              </li>
+              <li>
+                <i class="fa-solid fa-user"></i>
+                <%= link_to "Compte", "#" %>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-question"></i>
+                <%= link_to "Aide", "#" %>
+              </li>
+            </ul>
+          </div>
+
+
+
         <% else %>
           <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
