@@ -7,14 +7,15 @@ require 'open-uri'
 
 puts "Attention ça va commencer"
 
-%w[01 02 03 04 05 06 07 08 09 10 11 12 13 50 51 52 53 54 55 58 59 60 61 62 63 64 65 67 68 70 71 72 73 74 75 76 77 78 79
-  80 81 82 83 84 85 86 87 88 90 91 92 93 94 95 96 97 98 99].to_a.each do |num|
+%w[01 02 03 04 05 06 07 08 09 10 11 12 13 22 23 24 25 26 27 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 50 51 52 53 54
+   55 58 59 60 61 62 63 64 65 67 68 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84
+   85 86 87 88 90 91 92 93 94 95 96 97 98 99].to_a.each do |num|
   url = "https://api.themoviedb.org/3/movie/5#{num}?api_key=444db8b8fcf0f7b3af4b52ce1dfd38b8"
   p url
   movie_serialized = URI.open(url).read
   movie = JSON.parse(movie_serialized)
   poster_url = movie['poster_path']
-  Movie.create.rand(6)(
+  Movie.create(
     description: movie['overview'],
     rating: movie['vote_average'],
     image: "https://image.tmdb.org/t/p/original/#{poster_url}",
@@ -24,3 +25,24 @@ puts "Attention ça va commencer"
 end
 
 puts "gg mgl"
+
+puts "Attention ça va commencer 2"
+
+%w[01 02 03 04 05 06 07 08 09 12 13 22 23 24 25 26 27 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 50 51 52 53 54
+   55 58 59 60 61 62 63 64 65 67 68 70 71 72 73 74 75 76 77 78 79 80 81 82
+   87 88 90 91 92 93 94 95 96 97 98 99].to_a.each do |num|
+  url = "https://api.themoviedb.org/3/movie/6#{num}?api_key=444db8b8fcf0f7b3af4b52ce1dfd38b8"
+  p url
+  movie_serialized = URI.open(url).read
+  movie = JSON.parse(movie_serialized)
+  poster_url = movie['poster_path']
+  Movie.create(
+    description: movie['overview'],
+    rating: movie['vote_average'],
+    image: "https://image.tmdb.org/t/p/original/#{poster_url}",
+    release_year: movie['release_date'].to_date,
+    title: movie['original_title']
+  )
+end
+
+puts "gg mgl 2"

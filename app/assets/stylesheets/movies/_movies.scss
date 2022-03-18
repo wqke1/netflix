@@ -6,7 +6,7 @@
   background-image: url("https://www.tomsguide.fr/content/uploads/sites/2/2021/12/the-amazing-spider-man.jpg");
   background-size: cover;
   width: 100%;
-  height: 75vh;
+  height: 90vh;
 
   h1 {
     font-size: 3em;
@@ -71,7 +71,7 @@
 .banner-placement {
   margin-left: 5%;
   position: absolute;
-  bottom: 30%;
+  bottom: 10%;
 }
 
 #spider {
@@ -83,11 +83,13 @@ h2 {
     font-size: 19px;
     font-family: 'Noto Sans';
     font-weight: 700;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .h2-reprendre {
   position: relative;
-  top: 115px;
+  left: -70px;
 }
 
 /////////////////////////
@@ -97,17 +99,14 @@ h2 {
 .reprendre-avec {
 
   display: flex;
-  margin-left: 5%;;
-
+  margin-left: 5%;
 
   .film{
     display: flex;
     justify-content: space-evenly;
     width: 16%;
     margin: auto;
-    margin-top: 1%;
-    background-color: red;
-    height: 125px;
+    height: 130px;
     background-size: cover;
     border-radius: 3px;
     transition: 1s;
@@ -131,10 +130,11 @@ h2 {
 .top10-france {
 
   .film {
-    width: 10%;
-    height: 170px;
+    width: 12%;
+    height: 200px;
     margin-top: 1%;
     border-radius: 0px;
+    margin-bottom: 3%;
   }
 
   h2 {
@@ -146,3 +146,10 @@ h2 {
 /////////////////////////
 // all categories
 /////////////////////////
+
+.categories-movies-index {
+
+  h2 {
+    margin-left: 5%;
+  }
+}
