@@ -95,8 +95,6 @@ body {
   .hidden {
     display: none;
 
-
-
     li {
       color: #fff;
 
@@ -117,7 +115,9 @@ body {
     right: 0px;
     word-spacing: 7px;
     list-style: none;
+
   }
+
 
   &:hover .rotate {
     transform: rotate(180deg);
